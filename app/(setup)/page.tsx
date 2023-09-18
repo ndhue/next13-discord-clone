@@ -1,8 +1,14 @@
 import { redirect } from "next/navigation";
-
+import { Menu } from "lucide-react"
 import { db } from "@/lib/db";
 import { initialProfile } from "@/lib/initial-profile";
-import { InitialModal } from "@/components/modals/initial-modal";
+
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 import { NavigationSidebar } from "@/components/navigation/navigation-sidebar";
 
 const SetupPage = async () => {
@@ -24,11 +30,11 @@ const SetupPage = async () => {
 
   return (
     <div className="h-full">
-      <div className="hidden md:flex h-full w-[72px] z-30 flex-col fixed inset-y-0">
+      <div className="flex h-full w-[72px] z-30 flex-col fixed inset-y-0">
         <NavigationSidebar />
       </div>
         <div className="flex h-screen">
-          <div className="m-auto text-zinc-300/50 text-xl font-bold text-center">
+          <div className="m-auto text-zinc-500/70 dark:text-zinc-300/50 text-xl font-bold text-center">
             <h3>Nothing here</h3>
             <p>Create your server!</p>
           </div>
