@@ -64,7 +64,7 @@ export const DeleteMessageModal = () => {
             </Button>
             <Button
               disabled={isLoading}
-              variant="primary"
+              variant="secondary"
               onClick={onClick}
             >
               Confirm

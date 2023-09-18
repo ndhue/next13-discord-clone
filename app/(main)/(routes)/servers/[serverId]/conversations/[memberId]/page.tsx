@@ -16,6 +16,7 @@ interface MemberIdPageProps {
   },
   searchParams: {
     video?: boolean;
+    audio?: boolean;
   }
 }
 
@@ -68,7 +69,14 @@ const MemberIdPage = async ({
           audio={true}
         />
       )}
-      {!searchParams.video && (
+      {searchParams.audio && (
+        <MediaRoom
+          chatId={conversation.id}
+          video={false}
+          audio={true}
+        />
+      )}
+      {(!searchParams.video || !searchParams.audio) && (
         <>
           <ChatMessages
             member={currentMember}

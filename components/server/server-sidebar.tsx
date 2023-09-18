@@ -1,6 +1,6 @@
 import { ChannelType, MemberRole } from "@prisma/client";
 import { redirect } from "next/navigation";
-import { Hash, Mic, ShieldAlert, ShieldCheck, Video } from "lucide-react";
+import { Hash, Volume2, ShieldAlert, ShieldCheck, Video } from "lucide-react";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -19,7 +19,7 @@ interface ServerSidebarProps {
 
 const iconMap = {
   [ChannelType.TEXT]: <Hash className="mr-2 h-4 w-4" />,
-  [ChannelType.AUDIO]: <Mic className="mr-2 h-4 w-4" />,
+  [ChannelType.AUDIO]: <Volume2 className="mr-2 h-4 w-4" />,
   [ChannelType.VIDEO]: <Video className="mr-2 h-4 w-4" />
 };
 

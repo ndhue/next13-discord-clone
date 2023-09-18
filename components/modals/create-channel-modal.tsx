@@ -113,7 +113,7 @@ export const CreateChannelModal = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel
-                      className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary/70"
+                      className="uppercase text-xs font-bold text-zinc-500 dark:text-white"
                     >
                       Channel name
                     </FormLabel>
@@ -134,7 +134,7 @@ export const CreateChannelModal = () => {
                 name="type"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Channel Type</FormLabel>
+                    <FormLabel className="dark:text-white">Channel Type</FormLabel>
                     <Select
                       disabled={isLoading}
                       onValueChange={field.onChange}

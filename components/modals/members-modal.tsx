@@ -103,7 +103,7 @@ export const MembersModal = () => {
             Manage Members
           </DialogTitle>
           <DialogDescription 
-            className="text-center text-zinc-500"
+            className="text-center text-zinc-500 dark:text-zinc-400"
           >
             {server?.members?.length} Members
           </DialogDescription>
@@ -113,11 +113,11 @@ export const MembersModal = () => {
             <div key={member.id} className="flex items-center gap-x-2 mb-6">
               <UserAvatar src={member.profile.imageUrl} />
               <div className="flex flex-col gap-y-1">
-                <div className="text-xs font-semibold flex items-center gap-x-1">
+                <div className="text-sm font-semibold flex items-center gap-x-2">
                   {member.profile.name}
                   {roleIconMap[member.role]}
                 </div>
-                <p className="text-xs text-zinc-500">
+                <p className="text-[11px] text-zinc-500  dark:text-zinc-400">
                   {member.profile.email}
                 </p>
               </div>

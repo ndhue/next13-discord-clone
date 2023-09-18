@@ -47,7 +47,7 @@ export const DeleteServerModal = () => {
           <DialogTitle className="text-2xl text-center font-bold">
             Delete Server
           </DialogTitle>
-          <DialogDescription className="text-center text-zinc-500">
+          <DialogDescription className="text-center text-zinc-500 dark:text-zinc-400">
             Are you sure you want to do this? <br />
             <span className="text-indigo-500 font-semibold">{server?.name}</span> will be permanently deleted.
           </DialogDescription>
@@ -63,7 +63,7 @@ export const DeleteServerModal = () => {
             </Button>
             <Button
               disabled={isLoading}
-              variant="primary"
+              variant="secondary"
               onClick={onClick}
             >
               Confirm

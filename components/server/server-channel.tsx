@@ -6,7 +6,7 @@ import {
   MemberRole,
   Server
 } from "@prisma/client";
-import { Edit, Hash, Lock, Mic, Trash, Video } from "lucide-react";
+import { Edit, Hash, Lock, Volume2, Trash, Video } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
@@ -21,7 +21,7 @@ interface ServerChannelProps {
 
 const iconMap = {
   [ChannelType.TEXT]: Hash,
-  [ChannelType.AUDIO]: Mic,
+  [ChannelType.AUDIO]: Volume2,
   [ChannelType.VIDEO]: Video,
 }
 
